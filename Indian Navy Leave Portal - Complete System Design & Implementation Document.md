@@ -1,103 +1,97 @@
-# **COMNETCEN Automated Leave Management System (ALMS)**
+# **COMNETCEN (CBT) Automated Leave Management System (ALMS)**
 
-# **System Design, Operational Architecture, and Deployment Specifications**
+# **Charter of Duties – Post Implementation of BT 2026 & 2027 Master Leave Architecture**
 
-# **1\. System Overview & Objectives**
+# **1\. System Overview & Command Directives**
 
-COMNETCEN operates as the critical communications hub for naval operational networks, message-handling switches, cryptographic custody, and signal infrastructure. Ensuring 24/7/365 uninterrupted operational readiness demands stringent personnel planning. The Automated Leave Management System (ALMS) transitions COMNETCEN from manual, error-prone record-keeping to a deterministic, rule-governed digital clearinghouse.
+COMNETCEN (CBT) operates as the primary naval communications center under the command of **Commander Sreehari S., Officer-in-Charge**. Ensuring uninterrupted operational watchkeeping requires strict adherence to unit relief protocols and leave distribution directives under **BT 2026**.
 
-The core objectives of the system are:
+The core operational directives and conditions established for the station are:
 
-* **Operational Continuity Assurance:** Mandate that no critical communication role or watchkeeping console is left unstaffed during operational cycles.  
-* **Rigid Relief Protocols:** Enforce primary, secondary (TDLR 1), and tertiary (TDLR 2\) relief coverage across all 33 designated center duties.  
-* **Deterministic Rostering:** Guarantee non-overlapping absence windows between primary appointment holders and their nominated relief watchkeepers.  
-* **Equity and Transparency:** Track entitlement limits (60-day Annual Leave split into three 20-day blocks for permanent staff; 30-day Accumulated Leave split into two 15-day blocks for transitional/support staff) without schedule conflicts.  
-* **Auditable Verification:** Provide cryptographic verification, digital signatures, role-based approval routing, and immediate conflict flagging.
+* **Condition 1 (Leave Entitlement):** Each sailor is entitled to **60 days leave in 2–3 breaks** (scheduled systematically as three 20-day blocks).  
+* **Condition 2 (Operational Redundancy):** **Main and TDLR cannot both be on leave at the same time.** No critical duty console or communication circuit may be left without qualified active watchkeeper coverage.  
+* **General Instruction 1:** All personnel are required to maintain close liaison with the concerned maintenance agency for prompt defect rectification.  
+* **General Instruction 2:** Handing/taking over is to be completed, wherever applicable, and a completion report rendered to the issuing authority.  
+* **Year 2027 Confinement:** All leave allocations are scheduled strictly between **01 January 2027 and 26 December 2027**, with zero spillover into 2028.
 
-# **2\. Personnel Nominal Roll & Leave Entitlement Matrix**
+# **2\. Personnel Nominal Roll & Entitlement Matrix**
 
-The unit complement for this module comprises 12 sailors spanning executive communications, cryptographic systems, and technical infrastructure branches.
+The operational complement for COMNETCEN (CBT) comprises **11 sailors** across Executive, Communication, Tactical, and Operations trades.
 
-* **Ser 1 to 8:** Permanent establishment personnel entitled to 60 days of Annual Leave (AL), scheduled uniformly in three distinct 20-day blocks across Cycles 1, 2, and 3\.  
-* **Ser 9 to 12:** Specialist/transitional personnel entitled to 30 days of Leave, scheduled in two distinct 15-day blocks across Cycles 1 and 2\.
+| Ser | Name | Rank / Rate | Trade / Branch | Primary Appointment | Entitlement | Block Structure |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | Comms / Radio | Departmental Regulator | 60 Days AL | 3 Blocks × 20 Days |
+| 2 | Vishal Sharma | POCOM(Tel) | Comms / Radio | I/C COMNETCEN & Divisional Chief | 60 Days AL | 3 Blocks × 20 Days |
+| 3 | RK Gupta | POCOM(Tel) | Comms / Network | I/C NCN Centre & Dept Fire/Safety Co-ord | 60 Days AL | 3 Blocks × 20 Days |
+| 4 | Rajkishore | POCOM(Tel) | Comms / Telecom | I/C Telephone Exchange | 60 Days AL | 3 Blocks × 20 Days |
+| 5 | Mayur Badade | LCOM(Tac) | Tactical / Comms | I/C Funds (800 D) & AMC Systems | 60 Days AL | 3 Blocks × 20 Days |
+| 6 | Mahesh | LCOM(Tel) | Comms / Radio | Divisional Writer (COMNETCEN) & Store Room | 60 Days AL | 3 Blocks × 20 Days |
+| 7 | Vijendra | LCOM(Tac) | Tactical / Crypto | CBO Assistant & I/C Crypto Equipment | 60 Days AL | 3 Blocks × 20 Days |
+| 8 | MK Gurjar | LCOM(Tel) | Comms / Signal | Divisional Writer (NCN) & Sanchar 2.0 | 60 Days AL | 3 Blocks × 20 Days |
+| 9 | Rahul Chaira | AVR COM (Ops) | Operations / Comms | I/C Classified Waste & NCN Electrical | 60 Days AL | 3 Blocks × 20 Days |
+| 10 | Shivam Kumar | AVR COM (Ops) | Operations / Comms | I/C NCN Ops Room & Monthly Bills | 60 Days AL | 3 Blocks × 20 Days |
+| 11 | Palendra Singh | AVR COM (Ops) | Operations / Comms | I/C Ops Room (Admin) & Tel Repair | 60 Days AL | 3 Blocks × 20 Days |
 
-| Ser | Service No | Rank | Name | Branch / Trade | Primary Billet | Leave Entitlement | Cycle Structure |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| 1 | 214582-W | MCPO I (WTR) | R. K. Nair | Executive / Comms | Regulating Master Chief | 60 Days AL | 3 Blocks × 20 Days |
-| 2 | 218901-B | MCPO II (TEL) | S. P. Sharma | Comms / Radio | Shift In-Charge (Alpha) | 60 Days AL | 3 Blocks × 20 Days |
-| 3 | 221345-N | CPO (TEL) | Amit Kumar | Comms / Signal | Shift In-Charge (Bravo) | 60 Days AL | 3 Blocks × 20 Days |
-| 4 | 224512-K | PO (TEL) | Vikram Singh | Network Specialist | Broadcast Network Controller | 60 Days AL | 3 Blocks × 20 Days |
-| 5 | 227890-R | PO (TEL) | D. Mukherjee | Cryptographic Maint | Crypto Account Custodian | 60 Days AL | 3 Blocks × 20 Days |
-| 6 | 229001-A | LS (TEL) | Rajesh Patel | Comms / VLF-HF | Secure Terminal Operator 1 | 60 Days AL | 3 Blocks × 20 Days |
-| 7 | 231456-F | LS (TEL) | M. V. Rao | Radio Systems | Secure Terminal Operator 2 | 60 Days AL | 3 Blocks × 20 Days |
-| 8 | 233112-T | SEA I (TEL) | Harish Rawat | Signal Infrastructure | Routing & Dispatcher | 60 Days AL | 3 Blocks × 20 Days |
-| 9 | 235678-H | SEA I (TEL) | Kuldeep Yadav | Infrastructure Support | Antennas & Rigging Watch | 30 Days AL | 2 Blocks × 15 Days |
-| 10 | 237890-M | SEA I (UW) | G. K. Reddy | Auxiliary Support | Power & UPS In-Charge | 30 Days AL | 2 Blocks × 15 Days |
-| 11 | 240123-P | SEA II (TEL) | S. Chakraborty | Network Support | Line & Patching Tech | 30 Days AL | 2 Blocks × 15 Days |
-| 12 | 242456-Z | SEA II (TEL) | Ankit Verma | General Operations | Signal Distribution Office | 30 Days AL | 2 Blocks × 15 Days |
+# **3\. Charter of Duties & Relief Assignments (BT 2026)**
 
-# **3\. Complete Charter of Duties & Relief Protocol**
+Transcribed from command orders post implementation of BT 2026. Every operational duty assigns a Primary Watchkeeper ("Main"), TDLR 1 (First Relief), and TDLR 2 (Secondary Relief).
 
-The operational effectiveness of COMNETCEN requires a comprehensive map of all 33 critical unit duties. The duty allocation below enforces strict non-circularity: Primary \$\\ne\$ TDLR 1 \$\\ne\$ TDLR 2\.
-
-| Duty ID | Charter of Duty / Operational Responsibility | Primary Handler | TDLR 1 (First Relief) | TDLR 2 (Secondary Relief) | Fallback Operational Action Protocol |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| D-01 | Station Log & Regulating Office Administration | Ser 1 | Ser 2 | Ser 3 | Relinquish to Senior Watchkeeper on station |
-| D-02 | HF Operations & Global Broadcast Link Controller | Ser 2 | Ser 3 | Ser 4 | Fallback to secondary transceiver bench A |
-| D-03 | Tactical Data Link & Shore Integration Switch | Ser 3 | Ser 4 | Ser 2 | Route via alternate shore fiber ring |
-| D-04 | VLF Receiver Site Monitoring & Synchronization | Ser 4 | Ser 2 | Ser 6 | Lock receiver presets to baseline status |
-| D-05 | Crypto Key Variable Loading & Distribution | Ser 5 | Ser 4 | Ser 7 | Enact Key Vault dual-custody override |
-| D-06 | Cryptographic Physical Custody & Zeroization Logs | Ser 5 | Ser 1 | Ser 8 | Log inspection by Regulating Master Chief |
-| D-07 | Strategic IP Gateway Router Monitoring | Ser 4 | Ser 6 | Ser 11 | Switch core traffic to bypass node |
-| D-08 | Primary Fleet Broadcast Multiplexer Tuning | Ser 6 | Ser 7 | Ser 8 | Engage auto-failover to backup mux |
-| D-09 | Shore-to-Ship Telegraphic Line Terminal Ops | Ser 7 | Ser 8 | Ser 6 | Reroute traffic via redundant copper pair |
-| D-10 | Primary Signal Dispatch & Routing Matrix | Ser 8 | Ser 9 | Ser 12 | Shift routing desk to secondary console |
-| D-11 | Secure Voice Console Watchkeeping & Escalation | Ser 6 | Ser 8 | Ser 2 | Connect alternate secure conference line |
-| D-12 | Satellite Ground Terminal (SATCOM) Tracking | Ser 7 | Ser 6 | Ser 9 | Switch antenna pedestal to auto-stabilize |
-| D-13 | Message Switching Unit (MSU) Buffer Clearance | Ser 8 | Ser 12 | Ser 7 | Transfer queued flash buffer to manual spool |
-| D-14 | Emergency Transceiver Battery Bank Verification | Ser 10 | Ser 9 | Ser 11 | Direct hook-up to offline DC power unit |
-| D-15 | Network Hardware Level-1 Diagnostics & Swapping | Ser 11 | Ser 4 | Ser 10 | Pull and replace using pre-flashed chassis |
-| D-16 | Main Distribution Frame (MDF) Patch Management | Ser 11 | Ser 12 | Ser 9 | Isolate and strap alternate cross-connects |
-| D-17 | Antenna Matrix Switching & VSWR Verification | Ser 9 | Ser 10 | Ser 11 | Divert RF feed to dummy load array |
-| D-18 | Diesel Generator Automatic Transfer Switch (ATS) | Ser 10 | Ser 11 | Ser 1 | Manual transfer to base feeder sub-station |
-| D-19 | COMSEC Equipment Daily Zeroization Audits | Ser 5 | Ser 2 | Ser 1 | Dual physical muster with Duty Officer |
-| D-20 | Offline Cryptographic Tape Inward/Outward Registry | Ser 1 | Ser 5 | Ser 4 | Seal register pending physical inspection |
-| D-21 | Red Data Network Firewall Ruleset Review | Ser 4 | Ser 5 | Ser 6 | Lock egress policy; prevent rule modifications |
-| D-22 | Physical Perimeter Intrusion & Rack Access Logs | Ser 1 | Ser 10 | Ser 8 | Freeze electronic access badges |
-| D-23 | Optical Fiber Transceiver Link Budget Audits | Ser 11 | Ser 9 | Ser 4 | Switch to auxiliary multimode run |
-| D-24 | Distress Frequency (2182 kHz / 156.8 MHz) Guard | Ser 2 | Ser 6 | Ser 7 | Bridge emergency audio to main console |
-| D-25 | Tactical Air Comms Ground Relay Interlink | Ser 3 | Ser 7 | Ser 6 | Re-point UHF yagi array to omni tower |
-| D-26 | Classified Waste Destruction & Incineration Log | Ser 1 | Ser 3 | Ser 5 | Impound waste safe; require Duty Officer key |
-| D-27 | Technical Stores & Spares Requisition Registry | Ser 3 | Ser 1 | Ser 10 | Freeze stock issues; activate emergency reserve |
-| D-28 | Shift Duty Rostering & Change-of-Watch Orders | Ser 2 | Ser 1 | Ser 3 | Standardize shifts to standing Alpha watch |
-| D-29 | Fleet Teleprinter Maintenance & Head Cleaning | Ser 8 | Ser 7 | Ser 12 | Swap to solid-state serial capture unit |
-| D-30 | Signal Archive Tape Backup & Hard Drive Rotation | Ser 5 | Ser 8 | Ser 11 | Archive to locked off-site NAS enclosure |
-| D-31 | Cooling & HVAC Environment Verification in Crypto | Ser 10 | Ser 12 | Ser 1 | Deploy auxiliary split air-conditioning unit |
-| D-32 | Classified Document Transit Bags Escort & Seal | Ser 12 | Ser 8 | Ser 10 | Hand over custody to armed guard commander |
-| D-33 | Daily Synchronization of Atomic Clocks / NTP Nodes | Ser 4 | Ser 3 | Ser 5 | Lock system time to internal oven oscillator |
+| Ser No | Duties / Operational Responsibility | Main Watchkeeper | TDLR 1 (First Relief) | TDLR 2 (Secondary Relief) | Remarks |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Departmental Regulator | Pankaj Kumar Yadav, MCPOCOM(Tel) | Vishal Sharma, POCOM(Tel) | RK Gupta, POCOM(Tel) | Ser 1 |
+| 2 | Divisional Officer, Jr. COM sailor | -- [Officer Appointment] | -- | -- | Officer Post |
+| 3 | I/C COMNETCEN | Vishal Sharma, POCOM(Tel) | RK Gupta, POCOM(Tel) | -- | Center Shift I/C |
+| 4 | I/C NCN Centre & Dept Fire/Safety Co-ord | RK Gupta, POCOM(Tel) | -- | Vishal Sharma, POCOM(Tel) | COMNETCEN & NCN |
+| 5 | I/C Telephone Exchange | Rajkishore, POCOM(Tel) | Mayur, LCOM | Mahesh, LCOM | Telecom Ops |
+| 6 | Divisional Chief | Vishal Sharma, POCOM(Tel) | Rajkishore, POCOM | Vijendra, LCOM | Divisional Admin |
+| 7 | Divisional writer (COMNETCEN) | Mahesh, LCOM(Tel) | Mayur, LCOM(Tac) | Vishal Sharma, POCOM(Tel) | Station Logs |
+| 8 | Divisional writer (NCN) | MK Gurjar, LCOM(Tel) | Vijendra, LCOM | Rajkishore, POCOM | NCN Registry |
+| 10 | CBO Assistant | Vijendra, LCOM(Tac) | MK Gurjar, LCOM(Tel) | Mahesh, LCOM | Crypto Books |
+| 11 | I/C Crypto Equipment | Vijendra, LCOM | MK Gurjar, LCOM(Tel) | Mahesh, LCOM | Crypto Hardware |
+| 12 | I/C Classified Waste Destruction | Rahul Chaira, AVR COM | Palendra AVR COM | Shivam AVR COM | Dual Witness |
+| 13 | I/C NCN Ops Room | Shivam AVR COM | Rahul AVR COM | Palendra Singh, AVR COM (Ops) | Network Ops |
+| 14 | I/C Ops Room (Admin Block) | Palendra, AVR COM | Rahul AVR COM | Shivam AVR COM | Admin Block |
+| 15 | I/C PLL (COMNETCEN & Ops Room) | Mahesh, LCOM | MK Gurjar, LCOM(Tel) | Mayur, LCOM(Tac) | Leased Lines |
+| 16 | I/C PLL (NCN) | MK Gurjar, LCOM(Tel) | Vijendra, LCOM | RajKishore, POCOM | NCN Leased Lines |
+| 17 | I/C Portable Equipment | MK Gurjar, LCOM(Tel) | Mahesh, LCOM | Mayur, LCOM | Tactical Radios |
+| 18 | I/C Funds (800 D) | Mayur, LCOM(Tac) | Rajkishore, POCOM | Mahesh, LCOM | Imprest Registry |
+| 19 | I/C AMC: EPABX, Lines, Operators | Mayur Badade, LCOM(Tac) | Rajkishore, POCOM(Tel) | MK Gurjar, LCOM; Mahesh, LCOM | Vendor Contracts |
+| 20 | I/C Quarterly AMC Bills | Rahul Chaira, AVR COM | Shivam AVR COM | MK Gurjar, LCOM(Tel) | Vendor Verification |
+| 21 | I/C Monthly Telephone Bills | Shivam Kumar, AVR COM (Ops) | Palendra Singh, AVR COM (Ops) | MK Gurjar, LCOM(Tel) | Line Billing |
+| 22 | I/C Telephone Repair on field | Palendra Singh, AVR COM (Ops) | Shivam Kumar, AVR COM (Ops) | Rahul Chaira, AVR COM (Ops) | Field Maintenance |
+| 23 | Dept IT Assistant (INFOSEC & C-SAT) | Vijendra, LCOM(Tac) | MK Gurjar, LCOM | Mahesh, LCOM | IT & Satellite |
+| 24 | I/C Flags | Mahesh, LCOM | Mayur Badade, LCOM(Tac) | MK Gurjar, LCOM | Naval Protocol |
+| 25 | Survey and Demand I/C | Mahesh, LCOM | MK Gurjar, LCOM(Tel) | Mayur Badade, LCOM(Tac) | Stores Demand |
+| 26 | I/C NCN Electrical, DG & UPS Room | Rahul, AVR COM | Shivam AVR COM | Palendra AVR COM | Power Backup |
+| 27 | I/C NCN Equipment Room | MK Gurjar, LCOM | Vijendra, LCOM | Rajkishore, POCOM | Hardware Racks |
+| 28 | I/C Sanchar 2.0 and MSS System | MK Gurjar, LCOM | Mahesh, LCOM | Mayur, LCOM | Naval Messaging |
+| 29 | I/C Store room 1 & 2 | Mahesh, LCOM | MK Gurjar, LCOM | Mayur, LCOM | Technical Spares |
+| 30 | I/C Dept Books & Files (Signal folder) | Mahesh, LCOM | Mayur, LCOM | -- | Books & Orders |
+| 31 | I/C Garden & NCN surroundings | Palendra, AVR COM | Rahul, AVR COM | Shivam, AVR COM | Station Upkeep |
+| 32 | I/C NCN Maintenance | Shivam, AVR COM | Palendra, AVR COM | Rahul, AVR COM | Routine Checks |
+| 33 | I/C Maintenance COMNETCEN & Parking | Palendra, AVR COM | Shivam, AVR COM | Rahul, AVR COM | Infrastructure |
 
 # **4\. Master Operational Leave Schedule for Year 2027**
 
-To maintain uninterrupted operational readiness and complete all leave entitlements strictly within calendar year 2027 (Jan 1 to Dec 26, 2027, with no spillover into 2028), personnel leave is distributed across three balanced 120-day cycles using a duty-independent parallel rotation. At no point are watch buddies sharing any of the 33 critical appointments absent simultaneously.
+To maintain continuous 24/7 communications readiness and satisfy **Condition 1 (60 days leave in 3 breaks of 20 days)** and **Condition 2 (Main and TDLR cannot both be on leave concurrently)**, the 11 sailors are scheduled in non-conflicting parallel rotations across three 120-day cycles strictly within calendar year 2027 (01 Jan – 26 Dec 2027).
 
-* **Cycle 1 (01 Jan 2027 – 30 Apr 2027):** Ser 1–8 execute Block 1 (20 days each); Ser 9–12 execute Block 1 (15 days each).  
-* **Cycle 2 (01 May 2027 – 28 Aug 2027):** Ser 1–8 execute Block 2 (20 days each); Ser 9–12 execute Block 2 (15 days each, concluding their full 30-day entitlement).  
-* **Cycle 3 (29 Aug 2027 – 26 Dec 2027):** Ser 1–8 execute Block 3 (20 days each, concluding their full 60-day entitlement); Ser 9–12 remain on full-time station watch.
+* **Cycle 1 (01 Jan 2027 – 30 Apr 2027):** Block 1 (20 days per sailor).  
+* **Cycle 2 (01 May 2027 – 28 Aug 2027):** Block 2 (20 days per sailor).  
+* **Cycle 3 (29 Aug 2027 – 26 Dec 2027):** Block 3 (20 days per sailor, completing 60 days total).
 
-| Ser | Name | Leave Window: Block 1 | Leave Window: Block 2 | Leave Window: Block 3 | Total Days |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| 1 | R. K. Nair | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 29 Aug 2027 – 17 Sep 2027 | 60 |
-| 2 | S. P. Sharma | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 18 Sep 2027 – 07 Oct 2027 | 60 |
-| 3 | Amit Kumar | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 |
-| 4 | Vikram Singh | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 28 Oct 2027 – 16 Nov 2027 | 60 |
-| 5 | D. Mukherjee | 22 Mar 2027 – 10 Apr 2027 | 20 Jul 2027 – 08 Aug 2027 | 17 Nov 2027 – 06 Dec 2027 | 60 |
-| 6 | Rajesh Patel | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 29 Aug 2027 – 17 Sep 2027 | 60 |
-| 7 | M. V. Rao | 11 Apr 2027 – 30 Apr 2027 | 09 Aug 2027 – 28 Aug 2027 | 07 Dec 2027 – 26 Dec 2027 | 60 |
-| 8 | Harish Rawat | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 |
-| 9 | Kuldeep Yadav | 21 Jan 2027 – 04 Feb 2027 | 21 May 2027 – 04 Jun 2027 | N/A (30 Days Entitled) | 30 |
-| 10 | G. K. Reddy | 22 Mar 2027 – 05 Apr 2027 | 20 Jul 2027 – 03 Aug 2027 | N/A (30 Days Entitled) | 30 |
-| 11 | S. Chakraborty | 11 Apr 2027 – 25 Apr 2027 | 09 Aug 2027 – 23 Aug 2027 | N/A (30 Days Entitled) | 30 |
-| 12 | Ankit Verma | 02 Mar 2027 – 16 Mar 2027 | 30 Jun 2027 – 14 Jul 2027 | N/A (30 Days Entitled) | 30 |
+| Ser | Name | Rank / Rate | Block 1 Window (20D) | Block 2 Window (20D) | Block 3 Window (20D) | Total Days | Rotation Pairing |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
+| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 29 Aug 2027 – 17 Sep 2027 | 60 | Slot 1 (Single) |
+| 2 | Vishal Sharma | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 18 Sep 2027 – 07 Oct 2027 | 60 | Slot 2 (with MK Gurjar) |
+| 3 | RK Gupta | POCOM(Tel) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 | Slot 3 (with Rajkishore) |
+| 4 | Rajkishore | POCOM(Tel) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 | Slot 3 (with RK Gupta) |
+| 5 | Mayur Badade | LCOM(Tac) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 28 Oct 2027 – 16 Nov 2027 | 60 | Slot 4 (with Rahul Chaira) |
+| 6 | Mahesh | LCOM(Tel) | 22 Mar 2027 – 10 Apr 2027 | 20 Jul 2027 – 08 Aug 2027 | 17 Nov 2027 – 06 Dec 2027 | 60 | Slot 5 (with Shivam Kumar) |
+| 7 | Vijendra | LCOM(Tac) | 11 Apr 2027 – 30 Apr 2027 | 09 Aug 2027 – 28 Aug 2027 | 07 Dec 2027 – 26 Dec 2027 | 60 | Slot 6 (with Palendra Singh) |
+| 8 | MK Gurjar | LCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 18 Sep 2027 – 07 Oct 2027 | 60 | Slot 2 (with Vishal Sharma) |
+| 9 | Rahul Chaira | AVR COM (Ops) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 28 Oct 2027 – 16 Nov 2027 | 60 | Slot 4 (with Mayur Badade) |
+| 10 | Shivam Kumar | AVR COM (Ops) | 22 Mar 2027 – 10 Apr 2027 | 20 Jul 2027 – 08 Aug 2027 | 17 Nov 2027 – 06 Dec 2027 | 60 | Slot 5 (with Mahesh) |
+| 11 | Palendra Singh | AVR COM (Ops) | 11 Apr 2027 – 30 Apr 2027 | 09 Aug 2027 – 28 Aug 2027 | 07 Dec 2027 – 26 Dec 2027 | 60 | Slot 6 (with Vijendra) |
 
 # **5\. Technical System Architecture & Database Schema**
 
