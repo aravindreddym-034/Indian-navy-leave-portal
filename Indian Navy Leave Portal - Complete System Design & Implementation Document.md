@@ -8,15 +8,17 @@ COMNETCEN (CBT) operates as the primary naval communications center under the co
 
 The core operational directives and conditions established for the station are:
 
-* **Condition 1 (Leave Entitlement):** Each sailor is entitled to **60 days leave in 2–3 breaks** (scheduled systematically as three 20-day blocks).  
-* **Condition 2 (Operational Redundancy):** **Main and TDLR cannot both be on leave at the same time.** No critical duty console or communication circuit may be left without qualified active watchkeeper coverage.  
+* **Condition 1 (Leave Entitlement):** 
+  * Permanent Sailors (Ser 1–8: MCPO, PO, LCOM): Entitled to **60 days leave** structured as **three 20-day blocks**.
+  * Agniveer Sailors (Ser 9–12: Rahul Chaira, Shiva Singh Rajawat, Shivam Kumar, Palendra Singh): Entitled to **30 days leave** structured as **two 15-day blocks**.
+* **Condition 2 (Operational Redundancy):** **Main and TDLR cannot both be on leave at the same time.** No critical duty console or communication circuit may be left without qualified active watchkeeper coverage across all 32 station duties.  
 * **General Instruction 1:** All personnel are required to maintain close liaison with the concerned maintenance agency for prompt defect rectification.  
 * **General Instruction 2:** Handing/taking over is to be completed, wherever applicable, and a completion report rendered to the issuing authority.  
-* **Year 2027 Confinement:** All leave allocations are scheduled strictly between **01 January 2027 and 26 December 2027**, with zero spillover into 2028.
+* **Year 2027 Confinement:** All leave allocations are scheduled strictly within calendar year 2027 (**01 January 2027 to 19 November 2027**), with zero spillover into 2028.
 
 # **2\. Personnel Nominal Roll & Entitlement Matrix**
 
-The operational complement for COMNETCEN (CBT) comprises **11 sailors** across Executive, Communication, Tactical, and Operations trades.
+The operational complement for COMNETCEN (CBT) comprises **12 sailors** (8 Permanent Staff + 4 Agniveers) across Executive, Communication, Tactical, and Operations trades.
 
 | Ser | Name | Rank / Rate | Trade / Branch | Primary Appointment | Entitlement | Block Structure |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -28,9 +30,10 @@ The operational complement for COMNETCEN (CBT) comprises **11 sailors** across E
 | 6 | Mahesh | LCOM(Tel) | Comms / Radio | Divisional Writer (COMNETCEN) & Store Room | 60 Days AL | 3 Blocks × 20 Days |
 | 7 | Vijendra | LCOM(Tac) | Tactical / Crypto | CBO Assistant & I/C Crypto Equipment | 60 Days AL | 3 Blocks × 20 Days |
 | 8 | MK Gurjar | LCOM(Tel) | Comms / Signal | Divisional Writer (NCN) & Sanchar 2.0 | 60 Days AL | 3 Blocks × 20 Days |
-| 9 | Rahul Chaira | AVR COM (Ops) | Operations / Comms | I/C Classified Waste & NCN Electrical | 60 Days AL | 3 Blocks × 20 Days |
-| 10 | Shivam Kumar | AVR COM (Ops) | Operations / Comms | I/C NCN Ops Room & Monthly Bills | 60 Days AL | 3 Blocks × 20 Days |
-| 11 | Palendra Singh | AVR COM (Ops) | Operations / Comms | I/C Ops Room (Admin) & Tel Repair | 60 Days AL | 3 Blocks × 20 Days |
+| 9 | Rahul Chaira | AVR COM (Ops) | Operations / Comms | I/C Classified Waste & NCN Electrical | 30 Days AL | 2 Blocks × 15 Days |
+| 10 | Shiva Singh Rajawat | AVR COM (Ops) | Operations / Comms | Station Support & Communications Watch | 30 Days AL | 2 Blocks × 15 Days |
+| 11 | Shivam Kumar | AVR COM (Ops) | Operations / Comms | I/C NCN Ops Room & Monthly Bills | 30 Days AL | 2 Blocks × 15 Days |
+| 12 | Palendra Singh | AVR COM (Ops) | Operations / Comms | I/C Ops Room (Admin) & Tel Repair | 30 Days AL | 2 Blocks × 15 Days |
 
 # **3\. Charter of Duties & Relief Assignments (BT 2026)**
 
@@ -73,25 +76,26 @@ Transcribed from command orders post implementation of BT 2026. Every operationa
 
 # **4\. Master Operational Leave Schedule for Year 2027**
 
-To maintain continuous 24/7 communications readiness and satisfy **Condition 1 (60 days leave in 3 breaks of 20 days)** and **Condition 2 (Main and TDLR cannot both be on leave concurrently)**, the 11 sailors are scheduled in non-conflicting parallel rotations across three 120-day cycles strictly within calendar year 2027 (01 Jan – 26 Dec 2027).
+To maintain continuous 24/7 communications readiness and satisfy **Condition 1 (60 days leave for permanent sailors in 3 × 20D blocks; 30 days leave for Agniveers in 2 × 15D blocks)** and **Condition 2 (Main and TDLR cannot both be on leave concurrently)**, the 12 sailors are scheduled in non-conflicting parallel rotations across three cycles strictly within calendar year 2027 (**01 Jan – 19 Nov 2027**):
 
-* **Cycle 1 (01 Jan 2027 – 30 Apr 2027):** Block 1 (20 days per sailor).  
-* **Cycle 2 (01 May 2027 – 28 Aug 2027):** Block 2 (20 days per sailor).  
-* **Cycle 3 (29 Aug 2027 – 26 Dec 2027):** Block 3 (20 days per sailor, completing 60 days total).
+* **Cycle 1 (Starts 01 Jan 2027):** Block 1 for all 12 sailors (20 days for Ser 1–8; 15 days for Ser 9–12).  
+* **Cycle 2 (Starts 01 May 2027):** Block 2 for all 12 sailors (20 days for Ser 1–8; 15 days for Ser 9–12, completing 30 days total for Agniveers).  
+* **Cycle 3 (Starts 01 Sep 2027):** Block 3 for Permanent sailors Ser 1–8 (20 days each, completing 60 days total; Agniveers remain on active duty).
 
-| Ser | Name | Rank / Rate | Block 1 Window (20D) | Block 2 Window (20D) | Block 3 Window (20D) | Total Days | Rotation Pairing |
+| Ser | Name | Rank / Rate | Block 1 Window | Block 2 Window | Block 3 Window | Total Days | Rotation Pairing |
 | :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 29 Aug 2027 – 17 Sep 2027 | 60 | Slot 1 (Single) |
-| 2 | Vishal Sharma | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 18 Sep 2027 – 07 Oct 2027 | 60 | Slot 2 (with MK Gurjar) |
-| 3 | RK Gupta | POCOM(Tel) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 | Slot 3 (with Rajkishore) |
-| 4 | Rajkishore | POCOM(Tel) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 08 Oct 2027 – 27 Oct 2027 | 60 | Slot 3 (with RK Gupta) |
-| 5 | Mayur Badade | LCOM(Tac) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 28 Oct 2027 – 16 Nov 2027 | 60 | Slot 4 (with Rahul Chaira) |
-| 6 | Mahesh | LCOM(Tel) | 22 Mar 2027 – 10 Apr 2027 | 20 Jul 2027 – 08 Aug 2027 | 17 Nov 2027 – 06 Dec 2027 | 60 | Slot 5 (with Shivam Kumar) |
-| 7 | Vijendra | LCOM(Tac) | 11 Apr 2027 – 30 Apr 2027 | 09 Aug 2027 – 28 Aug 2027 | 07 Dec 2027 – 26 Dec 2027 | 60 | Slot 6 (with Palendra Singh) |
-| 8 | MK Gurjar | LCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 18 Sep 2027 – 07 Oct 2027 | 60 | Slot 2 (with Vishal Sharma) |
-| 9 | Rahul Chaira | AVR COM (Ops) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 28 Oct 2027 – 16 Nov 2027 | 60 | Slot 4 (with Mayur Badade) |
-| 10 | Shivam Kumar | AVR COM (Ops) | 22 Mar 2027 – 10 Apr 2027 | 20 Jul 2027 – 08 Aug 2027 | 17 Nov 2027 – 06 Dec 2027 | 60 | Slot 5 (with Mahesh) |
-| 11 | Palendra Singh | AVR COM (Ops) | 11 Apr 2027 – 30 Apr 2027 | 09 Aug 2027 – 28 Aug 2027 | 07 Dec 2027 – 26 Dec 2027 | 60 | Slot 6 (with Vijendra) |
+| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 01 Sep 2027 – 20 Sep 2027 | 60 | Pair 1 (with Mahesh) |
+| 2 | Vishal Sharma | POCOM(Tel) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 31 Oct 2027 – 19 Nov 2027 | 60 | Pair 4 (with MK Gurjar) |
+| 3 | RK Gupta | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 21 Sep 2027 – 10 Oct 2027 | 60 | Pair 2 (with Rajkishore) |
+| 4 | Rajkishore | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 21 Sep 2027 – 10 Oct 2027 | 60 | Pair 2 (with RK Gupta) |
+| 5 | Mayur Badade | LCOM(Tac) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 11 Oct 2027 – 30 Oct 2027 | 60 | Pair 3 (with Vijendra) |
+| 6 | Mahesh | LCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 01 Sep 2027 – 20 Sep 2027 | 60 | Pair 1 (with Pankaj Kumar Yadav) |
+| 7 | Vijendra | LCOM(Tac) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 11 Oct 2027 – 30 Oct 2027 | 60 | Pair 3 (with Mayur Badade) |
+| 8 | MK Gurjar | LCOM(Tel) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 31 Oct 2027 – 19 Nov 2027 | 60 | Pair 4 (with Vishal Sharma) |
+| 9 | Rahul Chaira | AVR COM (Ops) | 01 Jan 2027 – 15 Jan 2027 | 01 May 2027 – 15 May 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream A |
+| 10 | Shiva Singh Rajawat | AVR COM (Ops) | 16 Jan 2027 – 30 Jan 2027 | 16 May 2027 – 30 May 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream B |
+| 11 | Shivam Kumar | AVR COM (Ops) | 31 Jan 2027 – 14 Feb 2027 | 31 May 2027 – 14 Jun 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream C |
+| 12 | Palendra Singh | AVR COM (Ops) | 15 Feb 2027 – 01 Mar 2027 | 15 Jun 2027 – 29 Jun 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream D |
 
 # **5\. Technical System Architecture & Database Schema**
 
