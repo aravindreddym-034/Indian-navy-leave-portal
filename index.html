@@ -89,11 +89,19 @@
                   <span class="text-[10px] px-1.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-500">2027</span>
                 </a>
                 <a 
+                  href="#blackouts" 
+                  onclick="closeNavDropdown()"
+                  class="dropdown-nav-item flex items-center justify-between px-3 py-2 text-xs rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                >
+                  <span class="font-medium">4. Blackout Windows</span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-500">5 Days</span>
+                </a>
+                <a 
                   href="#instructions" 
                   onclick="closeNavDropdown()"
                   class="dropdown-nav-item flex items-center justify-between px-3 py-2 text-xs rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
                 >
-                  <span class="font-medium">4. Rules &amp; Conditions</span>
+                  <span class="font-medium">5. Rules &amp; Directives</span>
                   <span class="text-[10px] px-1.5 py-0.5 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-500">BT 2026</span>
                 </a>
               </div>
@@ -171,6 +179,12 @@
           <span>2027 Schedule</span>
         </a>
         <a 
+          href="#blackouts" 
+          class="nav-btn px-2.5 py-1 text-xs font-medium rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors inline-flex items-center gap-1.5"
+        >
+          <span>Blackout Windows</span>
+        </a>
+        <a 
           href="#instructions" 
           class="nav-btn px-2.5 py-1 text-xs font-medium rounded-md border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors inline-flex items-center gap-1.5"
         >
@@ -201,9 +215,9 @@
         <div class="text-[9px] sm:text-xs text-neutral-400 mt-0.5 leading-tight">Perm: 60D (3×20D) | AVR: 30D (2×15D)</div>
       </div>
       <div class="p-2.5 sm:p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900">
-        <div class="text-[10px] sm:text-xs text-neutral-500 font-medium">Coverage Model</div>
-        <div class="text-sm sm:text-xl font-semibold mt-0.5 sm:mt-1">Main + TDLR Rule</div>
-        <div class="text-[9px] sm:text-xs text-neutral-400 mt-0.5 leading-tight">Condition 2: 0 Overlapping Leaves</div>
+        <div class="text-[10px] sm:text-xs text-neutral-500 font-medium">Blackout Policy</div>
+        <div class="text-sm sm:text-xl font-semibold mt-0.5 sm:mt-1">5 Windows</div>
+        <div class="text-[9px] sm:text-xs text-neutral-400 mt-0.5 leading-tight">0 Leaves on Nat'l / Insp Days</div>
       </div>
     </section>
 
@@ -211,133 +225,133 @@
     <section id="nominal-roll" class="scroll-mt-32 space-y-3">
       <div class="flex items-center justify-between">
         <div>
-          <h2 class="text-base font-semibold">Personnel Nominal Roll &amp; Entitlement Matrix</h2>
-          <p class="text-xs text-neutral-500 mt-0.5">8 Permanent sailors (60 Days AL) &amp; 4 Agniveers (30 Days AL)</p>
+          <h2 class="text-base font-semibold">1. Personnel Nominal Roll</h2>
+          <p class="text-xs text-neutral-500 mt-0.5">Authorised complement for COMNETCEN (CBT) under BT 2026</p>
         </div>
-        <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">12 Personnel</span>
+        <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">12 Active</span>
       </div>
 
-      <div class="border border-neutral-200 dark:border-neutral-800 rounded-md overflow-hidden bg-white dark:bg-neutral-900 shadow-sm">
+      <div class="rounded-md border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900">
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse whitespace-nowrap table-searchable" id="tableNominal">
+          <table class="w-full text-left text-xs border-collapse table-searchable">
             <thead>
-              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/70 dark:bg-neutral-800/70 text-xs text-neutral-600 dark:text-neutral-400">
-                <th class="py-2.5 px-3 w-12 text-center">Ser</th>
+              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/75 dark:bg-neutral-800/50 font-medium text-neutral-600 dark:text-neutral-400">
+                <th class="py-2.5 px-3 text-center w-12 font-mono">Ser</th>
                 <th class="py-2.5 px-3">Name</th>
-                <th class="py-2.5 px-3">Rank / Designation</th>
-                <th class="py-2.5 px-3">Branch / Trade</th>
-                <th class="py-2.5 px-3">Key Appointments</th>
-                <th class="py-2.5 px-3 text-center">Entitlement</th>
-                <th class="py-2.5 px-3">Cycle Distribution</th>
+                <th class="py-2.5 px-3">Rank / Rate</th>
+                <th class="py-2.5 px-3">Trade / Branch</th>
+                <th class="py-2.5 px-3">Primary Appointment</th>
+                <th class="py-2.5 px-3">Entitlement</th>
+                <th class="py-2.5 px-3 font-mono">Block Structure</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-xs">
+            <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-xs font-mono">
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">1</td>
-                <td class="py-2.5 px-3 font-medium">Pankaj Kumar Yadav</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">MCPOCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Radio</td>
-                <td class="py-2.5 px-3">Departmental Regulator</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">1</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Pankaj Kumar Yadav</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">MCPOCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Radio</td>
+                <td class="py-2.5 px-3 font-sans">Departmental Regulator</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">2</td>
-                <td class="py-2.5 px-3 font-medium">Vishal Sharma</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">POCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Radio</td>
-                <td class="py-2.5 px-3">I/C COMNETCEN & Divisional Chief</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">2</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Vishal Sharma</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Radio</td>
+                <td class="py-2.5 px-3 font-sans">I/C COMNETCEN & Divisional Chief</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">3</td>
-                <td class="py-2.5 px-3 font-medium">RK Gupta</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">POCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Network</td>
-                <td class="py-2.5 px-3">I/C NCN Centre & Dept Fire/Safety Co-ord</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">3</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">RK Gupta</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Network</td>
+                <td class="py-2.5 px-3 font-sans">I/C NCN Centre & Dept Fire/Safety Co-ord</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">4</td>
-                <td class="py-2.5 px-3 font-medium">Rajkishore</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">POCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Telecom</td>
-                <td class="py-2.5 px-3">I/C Telephone Exchange</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">4</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Rajkishore</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Telecom</td>
+                <td class="py-2.5 px-3 font-sans">I/C Telephone Exchange</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">5</td>
-                <td class="py-2.5 px-3 font-medium">Mayur Badade</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">LCOM(Tac)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Tactical / Comms</td>
-                <td class="py-2.5 px-3">I/C Funds (800 D) & AMC Systems</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">5</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Mayur Badade</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tac)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Tactical / Comms</td>
+                <td class="py-2.5 px-3 font-sans">I/C Funds (800 D) & AMC Systems</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">6</td>
-                <td class="py-2.5 px-3 font-medium">Mahesh</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">LCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Radio</td>
-                <td class="py-2.5 px-3">Divisional Writer (COMNETCEN) & Store Room</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">6</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Mahesh</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Radio</td>
+                <td class="py-2.5 px-3 font-sans">Divisional Writer (COMNETCEN) & Store Room</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">7</td>
-                <td class="py-2.5 px-3 font-medium">Vijendra</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">LCOM(Tac)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Tactical / Crypto</td>
-                <td class="py-2.5 px-3">CBO Assistant & I/C Crypto Equipment</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">7</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Vijendra</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tac)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Tactical / Crypto</td>
+                <td class="py-2.5 px-3 font-sans">CBO Assistant & I/C Crypto Equipment</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">8</td>
-                <td class="py-2.5 px-3 font-medium">MK Gurjar</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">LCOM(Tel)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Comms / Signal</td>
-                <td class="py-2.5 px-3">Divisional Writer (NCN) & Sanchar 2.0</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium font-bold">60 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">8</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">MK Gurjar</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tel)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Comms / Signal</td>
+                <td class="py-2.5 px-3 font-sans">Divisional Writer (NCN) & Sanchar 2.0</td>
+                <td class="py-2.5 px-3 font-sans font-medium">60 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">3 Blocks × 20 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">9</td>
-                <td class="py-2.5 px-3 font-medium">Rahul Chaira</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Operations / Comms</td>
-                <td class="py-2.5 px-3">I/C Classified Waste & NCN Electrical</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium text-neutral-500">30 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">9</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Rahul Chaira</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Operations / Comms</td>
+                <td class="py-2.5 px-3 font-sans">I/C Classified Waste & NCN Electrical</td>
+                <td class="py-2.5 px-3 font-sans font-medium">30 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">2 Blocks × 15 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">10</td>
-                <td class="py-2.5 px-3 font-medium">Shiva Singh Rajawat</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Operations / Comms</td>
-                <td class="py-2.5 px-3">I/C Maintenance COMNETCEN & Parking Area</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium text-neutral-500">30 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">10</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Shiva Singh Rajawat</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Operations / Comms</td>
+                <td class="py-2.5 px-3 font-sans">I/C Maintenance COMNETCEN & Parking Area</td>
+                <td class="py-2.5 px-3 font-sans font-medium">30 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">2 Blocks × 15 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">11</td>
-                <td class="py-2.5 px-3 font-medium">Shivam Kumar</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Operations / Comms</td>
-                <td class="py-2.5 px-3">I/C NCN Ops Room & Monthly Bills</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium text-neutral-500">30 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">11</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Shivam Kumar</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Operations / Comms</td>
+                <td class="py-2.5 px-3 font-sans">I/C NCN Ops Room & Monthly Bills</td>
+                <td class="py-2.5 px-3 font-sans font-medium">30 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">2 Blocks × 15 Days</td>
               </tr>
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
-                <td class="py-2.5 px-3 text-center font-mono font-medium">12</td>
-                <td class="py-2.5 px-3 font-medium">Palendra Singh</td>
-                <td class="py-2.5 px-3 font-mono text-neutral-700 dark:text-neutral-300">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3 text-neutral-500">Operations / Comms</td>
-                <td class="py-2.5 px-3">I/C Ops Room (Admin) & Tel Repair</td>
-                <td class="py-2.5 px-3 text-center font-mono font-medium text-neutral-500">30 Days AL</td>
+                <td class="py-2.5 px-3 text-center font-medium">12</td>
+                <td class="py-2.5 px-3 font-sans font-medium text-neutral-900 dark:text-neutral-100">Palendra Singh</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
+                <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">Operations / Comms</td>
+                <td class="py-2.5 px-3 font-sans">I/C Ops Room (Admin) & Tel Repair</td>
+                <td class="py-2.5 px-3 font-sans font-medium">30 Days AL</td>
                 <td class="py-2.5 px-3 text-neutral-500">2 Blocks × 15 Days</td>
               </tr>
             </tbody>
@@ -350,26 +364,26 @@
     <section id="charter-duties" class="scroll-mt-32 space-y-3">
       <div class="flex items-center justify-between">
         <div>
-          <h2 class="text-base font-semibold">Charter of Duties – Post Implementation of BT 2026</h2>
-          <p class="text-xs text-neutral-500 mt-0.5">32 unit responsibilities with assigned Main Handler, TDLR 1, and TDLR 2 reliefs</p>
+          <h2 class="text-base font-semibold">2. Charter of Duties (Post Implementation of BT 2026)</h2>
+          <p class="text-xs text-neutral-500 mt-0.5">Authorised by Cdr Sreehari S., Officer-in-Charge, COMNETCEN (CBT)</p>
         </div>
         <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">32 Duties</span>
       </div>
 
-      <div class="border border-neutral-200 dark:border-neutral-800 rounded-md overflow-hidden bg-white dark:bg-neutral-900 shadow-sm">
+      <div class="rounded-md border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900">
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse whitespace-nowrap table-searchable" id="tableDuties">
+          <table class="w-full text-left text-xs border-collapse table-searchable">
             <thead>
-              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/70 dark:bg-neutral-800/70 text-xs text-neutral-600 dark:text-neutral-400">
-                <th class="py-2.5 px-3 w-16 text-center font-mono">Ser No</th>
-                <th class="py-2.5 px-3 min-w-[240px]">Duties / Operational Responsibility</th>
-                <th class="py-2.5 px-3">Main Watchkeeper (Name / Rank)</th>
+              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/75 dark:bg-neutral-800/50 font-medium text-neutral-600 dark:text-neutral-400">
+                <th class="py-2.5 px-3 text-center w-12 font-mono">S.No</th>
+                <th class="py-2.5 px-3">Duties / Operational Responsibility</th>
+                <th class="py-2.5 px-3">Main Watchkeeper</th>
                 <th class="py-2.5 px-3">TDLR 1 (First Relief)</th>
                 <th class="py-2.5 px-3">TDLR 2 (Secondary Relief)</th>
-                <th class="py-2.5 px-3">Remarks / Scope</th>
+                <th class="py-2.5 px-3 font-sans">Remarks / Operational Focus</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-xs">
+            <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-xs font-sans">
               <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/50">
                 <td class="py-2.5 px-3 text-center font-mono font-medium">1</td>
                 <td class="py-2.5 px-3 font-medium">Departmental Regulator</td>
@@ -636,25 +650,25 @@
     <section id="leave-schedule" class="scroll-mt-32 space-y-3">
       <div class="flex items-center justify-between">
         <div>
-          <h2 class="text-base font-semibold">Master Operational Leave Schedule (2027)</h2>
-          <p class="text-xs text-neutral-500 mt-0.5">All leaves strictly concluded within calendar year 2027 (01 Jan – 19 Nov) // Zero Main-TDLR conflicts</p>
+          <h2 class="text-base font-semibold">3. Master Operational Leave Schedule (Calendar Year 2027)</h2>
+          <p class="text-xs text-neutral-500 mt-0.5">Strict adherence to Condition 1 (60D/30D), Condition 2 (0 Main/TDLR Overlaps), and Blackout Windows</p>
         </div>
-        <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">01 Jan – 19 Nov 2027</span>
+        <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">01 Jan – 18 Nov 2027</span>
       </div>
 
-      <div class="border border-neutral-200 dark:border-neutral-800 rounded-md overflow-hidden bg-white dark:bg-neutral-900 shadow-sm">
+      <div class="rounded-md border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900">
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse whitespace-nowrap table-searchable" id="tableSchedule">
+          <table class="w-full text-left text-xs border-collapse table-searchable">
             <thead>
-              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/70 dark:bg-neutral-800/70 text-xs text-neutral-600 dark:text-neutral-400">
-                <th class="py-2.5 px-3 w-12 text-center">Ser</th>
-                <th class="py-2.5 px-3">Personnel Name</th>
+              <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-100/75 dark:bg-neutral-800/50 font-medium text-neutral-600 dark:text-neutral-400">
+                <th class="py-2.5 px-3 text-center w-12 font-mono">Ser</th>
+                <th class="py-2.5 px-3">Name</th>
                 <th class="py-2.5 px-3">Rank / Rate</th>
-                <th class="py-2.5 px-3 font-mono">Block 1 Window</th>
-                <th class="py-2.5 px-3 font-mono">Block 2 Window</th>
-                <th class="py-2.5 px-3 font-mono">Block 3 Window</th>
+                <th class="py-2.5 px-3">Block 1 Window</th>
+                <th class="py-2.5 px-3">Block 2 Window</th>
+                <th class="py-2.5 px-3">Block 3 Window</th>
                 <th class="py-2.5 px-3 text-right">Total Days</th>
-                <th class="py-2.5 px-3">Rotation Stream</th>
+                <th class="py-2.5 px-3">Rotation Pairing</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-xs font-mono">
@@ -664,7 +678,7 @@
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">MCPOCOM(Tel)</td>
                 <td class="py-2.5 px-3">01 Jan 2027 – 20 Jan 2027</td>
                 <td class="py-2.5 px-3">01 May 2027 – 20 May 2027</td>
-                <td class="py-2.5 px-3 ">01 Sep 2027 – 20 Sep 2027</td>
+                <td class="py-2.5 px-3 ">21 Jul 2027 – 09 Aug 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 1 (with Mahesh)</td>
               </tr>
@@ -672,9 +686,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">2</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Vishal Sharma</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
-                <td class="py-2.5 px-3">02 Mar 2027 – 21 Mar 2027</td>
+                <td class="py-2.5 px-3">13 Mar 2027 – 01 Apr 2027</td>
                 <td class="py-2.5 px-3">30 Jun 2027 – 19 Jul 2027</td>
-                <td class="py-2.5 px-3 ">31 Oct 2027 – 19 Nov 2027</td>
+                <td class="py-2.5 px-3 ">30 Oct 2027 – 18 Nov 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 4 (with MK Gurjar)</td>
               </tr>
@@ -682,9 +696,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">3</td>
                 <td class="py-2.5 px-3 font-sans font-medium">RK Gupta</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
-                <td class="py-2.5 px-3">21 Jan 2027 – 09 Feb 2027</td>
+                <td class="py-2.5 px-3">27 Jan 2027 – 15 Feb 2027</td>
                 <td class="py-2.5 px-3">21 May 2027 – 09 Jun 2027</td>
-                <td class="py-2.5 px-3 ">21 Sep 2027 – 10 Oct 2027</td>
+                <td class="py-2.5 px-3 ">16 Aug 2027 – 04 Sep 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 2 (with Rajkishore)</td>
               </tr>
@@ -692,9 +706,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">4</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Rajkishore</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">POCOM(Tel)</td>
-                <td class="py-2.5 px-3">21 Jan 2027 – 09 Feb 2027</td>
+                <td class="py-2.5 px-3">27 Jan 2027 – 15 Feb 2027</td>
                 <td class="py-2.5 px-3">21 May 2027 – 09 Jun 2027</td>
-                <td class="py-2.5 px-3 ">21 Sep 2027 – 10 Oct 2027</td>
+                <td class="py-2.5 px-3 ">16 Aug 2027 – 04 Sep 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 2 (with RK Gupta)</td>
               </tr>
@@ -702,9 +716,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">5</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Mayur Badade</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tac)</td>
-                <td class="py-2.5 px-3">10 Feb 2027 – 01 Mar 2027</td>
+                <td class="py-2.5 px-3">16 Feb 2027 – 07 Mar 2027</td>
                 <td class="py-2.5 px-3">10 Jun 2027 – 29 Jun 2027</td>
-                <td class="py-2.5 px-3 ">11 Oct 2027 – 30 Oct 2027</td>
+                <td class="py-2.5 px-3 ">01 Oct 2027 – 20 Oct 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 3 (with Vijendra)</td>
               </tr>
@@ -714,7 +728,7 @@
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tel)</td>
                 <td class="py-2.5 px-3">01 Jan 2027 – 20 Jan 2027</td>
                 <td class="py-2.5 px-3">01 May 2027 – 20 May 2027</td>
-                <td class="py-2.5 px-3 ">01 Sep 2027 – 20 Sep 2027</td>
+                <td class="py-2.5 px-3 ">21 Jul 2027 – 09 Aug 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 1 (with Pankaj Kumar)</td>
               </tr>
@@ -722,9 +736,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">7</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Vijendra</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tac)</td>
-                <td class="py-2.5 px-3">10 Feb 2027 – 01 Mar 2027</td>
+                <td class="py-2.5 px-3">16 Feb 2027 – 07 Mar 2027</td>
                 <td class="py-2.5 px-3">10 Jun 2027 – 29 Jun 2027</td>
-                <td class="py-2.5 px-3 ">11 Oct 2027 – 30 Oct 2027</td>
+                <td class="py-2.5 px-3 ">01 Oct 2027 – 20 Oct 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 3 (with Mayur Badade)</td>
               </tr>
@@ -732,9 +746,9 @@
                 <td class="py-2.5 px-3 text-center font-medium">8</td>
                 <td class="py-2.5 px-3 font-sans font-medium">MK Gurjar</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">LCOM(Tel)</td>
-                <td class="py-2.5 px-3">02 Mar 2027 – 21 Mar 2027</td>
+                <td class="py-2.5 px-3">13 Mar 2027 – 01 Apr 2027</td>
                 <td class="py-2.5 px-3">30 Jun 2027 – 19 Jul 2027</td>
-                <td class="py-2.5 px-3 ">31 Oct 2027 – 19 Nov 2027</td>
+                <td class="py-2.5 px-3 ">30 Oct 2027 – 18 Nov 2027</td>
                 <td class="py-2.5 px-3 text-right font-semibold ">60</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-500">Pair 4 (with Vishal Sharma)</td>
               </tr>
@@ -752,7 +766,7 @@
                 <td class="py-2.5 px-3 text-center font-medium">10</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Shiva Singh Rajawat</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3">16 Jan 2027 – 30 Jan 2027</td>
+                <td class="py-2.5 px-3">27 Jan 2027 – 10 Feb 2027</td>
                 <td class="py-2.5 px-3">16 May 2027 – 30 May 2027</td>
                 <td class="py-2.5 px-3 text-neutral-400">N/A (30D Entitled)</td>
                 <td class="py-2.5 px-3 text-right font-semibold text-neutral-500">30</td>
@@ -762,7 +776,7 @@
                 <td class="py-2.5 px-3 text-center font-medium">11</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Shivam Kumar</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3">31 Jan 2027 – 14 Feb 2027</td>
+                <td class="py-2.5 px-3">11 Feb 2027 – 25 Feb 2027</td>
                 <td class="py-2.5 px-3">31 May 2027 – 14 Jun 2027</td>
                 <td class="py-2.5 px-3 text-neutral-400">N/A (30D Entitled)</td>
                 <td class="py-2.5 px-3 text-right font-semibold text-neutral-500">30</td>
@@ -772,7 +786,7 @@
                 <td class="py-2.5 px-3 text-center font-medium">12</td>
                 <td class="py-2.5 px-3 font-sans font-medium">Palendra Singh</td>
                 <td class="py-2.5 px-3 font-sans text-neutral-600 dark:text-neutral-400">AVR COM (Ops)</td>
-                <td class="py-2.5 px-3">15 Feb 2027 – 01 Mar 2027</td>
+                <td class="py-2.5 px-3">26 Feb 2027 – 12 Mar 2027</td>
                 <td class="py-2.5 px-3">15 Jun 2027 – 29 Jun 2027</td>
                 <td class="py-2.5 px-3 text-neutral-400">N/A (30D Entitled)</td>
                 <td class="py-2.5 px-3 text-right font-semibold text-neutral-500">30</td>
@@ -784,11 +798,80 @@
       </div>
     </section>
 
-    <!-- SECTION 4: CONDITIONS & GENERAL INSTRUCTIONS -->
+    <!-- SECTION 4: MANDATORY BLACKOUT WINDOWS -->
+    <section id="blackouts" class="scroll-mt-32 space-y-3">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-base font-semibold">4. Mandatory Station Blackout Periods (Zero-Leave Policy)</h2>
+          <p class="text-xs text-neutral-500 mt-0.5">Strict prohibition of leave during national observances, fleet inspections, and station musters</p>
+        </div>
+        <span class="text-xs font-mono bg-neutral-900 text-white dark:bg-white dark:text-black px-2 py-1 rounded-md">100% Present</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-xs text-neutral-900 dark:text-neutral-100">Republic Day</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">26 Jan 2027</span>
+          </div>
+          <p class="text-[11px] text-neutral-500 leading-relaxed">National Protocol Day – Station Strength 100%</p>
+          <div class="pt-1.5 flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Verified: 0 Sailors on Leave</span>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-xs text-neutral-900 dark:text-neutral-100">Independence Day</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">15 Aug 2027</span>
+          </div>
+          <p class="text-[11px] text-neutral-500 leading-relaxed">National Ceremonial Day – Station Strength 100%</p>
+          <div class="pt-1.5 flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Verified: 0 Sailors on Leave</span>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-xs text-neutral-900 dark:text-neutral-100">Annual Inspection</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">15 Sep – 30 Sep 2027</span>
+          </div>
+          <p class="text-[11px] text-neutral-500 leading-relaxed">Command Fleet Inspection – Zero Leave Policy</p>
+          <div class="pt-1.5 flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Verified: 0 Sailors on Leave</span>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-xs text-neutral-900 dark:text-neutral-100">Diwali</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">29 Oct 2027</span>
+          </div>
+          <p class="text-[11px] text-neutral-500 leading-relaxed">Festival Muster – Station Strength 100%</p>
+          <div class="pt-1.5 flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Verified: 0 Sailors on Leave</span>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-semibold text-xs text-neutral-900 dark:text-neutral-100">Navy Day</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">04 Dec 2027</span>
+          </div>
+          <p class="text-[11px] text-neutral-500 leading-relaxed">Naval Protocol Day – Station Strength 100%</p>
+          <div class="pt-1.5 flex items-center gap-1.5 text-[10px] text-emerald-600 dark:text-emerald-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Verified: 0 Sailors on Leave</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONDITIONS & GENERAL INSTRUCTIONS -->
     <section id="instructions" class="scroll-mt-32 space-y-3">
       <div class="flex items-center justify-between">
         <div>
-          <h2 class="text-base font-semibold">Conditions &amp; General Instructions</h2>
+          <h2 class="text-base font-semibold">5. Conditions &amp; General Instructions</h2>
           <p class="text-xs text-neutral-500 mt-0.5">Command standing directives issued under BT 2026</p>
         </div>
         <span class="text-xs text-neutral-500 font-mono bg-neutral-100 dark:bg-neutral-800 px-2 py-1 rounded-md border border-neutral-300 dark:border-neutral-700">Official Directive</span>
@@ -806,6 +889,10 @@
             <li class="flex items-start gap-2">
               <span class="font-mono font-bold bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-[11px]">Condition 2</span>
               <span><strong>Operational Redundancy:</strong> Main and TDLR cannot both be on leave at the same time. Validated across 365 calendar days with 0 conflicts.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="font-mono font-bold bg-neutral-100 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-[11px]">Condition 3</span>
+              <span><strong>Station Blackouts:</strong> Strictly zero leave during Republic Day (26 Jan), Independence Day (15 Aug), Annual Inspection (15–30 Sep), Diwali (29 Oct), and Navy Day (04 Dec).</span>
             </li>
           </ul>
         </div>

@@ -12,9 +12,15 @@ The core operational directives and conditions established for the station are:
   * Permanent Sailors (Ser 1–8: MCPO, PO, LCOM): Entitled to **60 days leave** structured as **three 20-day blocks**.
   * Agniveer Sailors (Ser 9–12: Rahul Chaira, Shiva Singh Rajawat, Shivam Kumar, Palendra Singh): Entitled to **30 days leave** structured as **two 15-day blocks**.
 * **Condition 2 (Operational Redundancy):** **Main and TDLR cannot both be on leave at the same time.** No critical duty console or communication circuit may be left without qualified active watchkeeper coverage across all 32 station duties.  
+* **Condition 3 (Station Blackout Periods – Zero-Leave Policy):** Strictly **no personnel may proceed on leave** during the following mandatory command and national observances:
+  1. **Republic Day:** 26 January 2027
+  2. **Independence Day:** 15 August 2027
+  3. **Annual Inspection:** 15 September 2027 to 30 September 2027
+  4. **Diwali:** 29 October 2027
+  5. **Navy Day:** 04 December 2027
 * **General Instruction 1:** All personnel are required to maintain close liaison with the concerned maintenance agency for prompt defect rectification.  
 * **General Instruction 2:** Handing/taking over is to be completed, wherever applicable, and a completion report rendered to the issuing authority.  
-* **Year 2027 Confinement:** All leave allocations are scheduled strictly within calendar year 2027 (**01 January 2027 to 19 November 2027**), with zero spillover into 2028.
+* **Year 2027 Confinement:** All leave allocations are scheduled strictly within calendar year 2027 (**01 January 2027 to 18 November 2027**), with zero spillover into 2028.
 
 # **2\. Personnel Nominal Roll & Entitlement Matrix**
 
@@ -76,26 +82,41 @@ Transcribed from command orders post implementation of BT 2026. Every operationa
 
 # **4\. Master Operational Leave Schedule for Year 2027**
 
-To maintain continuous 24/7 communications readiness and satisfy **Condition 1 (60 days leave for permanent sailors in 3 × 20D blocks; 30 days leave for Agniveers in 2 × 15D blocks)** and **Condition 2 (Main and TDLR cannot both be on leave concurrently)**, the 12 sailors are scheduled in non-conflicting parallel rotations across three cycles strictly within calendar year 2027 (**01 Jan – 19 Nov 2027**):
+To maintain continuous 24/7 communications readiness and strictly satisfy:
+1. **Condition 1 (60 days leave in 3 × 20D blocks for permanent sailors; 30 days leave in 2 × 15D blocks for Agniveers)**
+2. **Condition 2 (Main and TDLR cannot both be on leave concurrently across all 32 duties)**
+3. **Condition 3 (Station Blackouts: 100% station staffing on 26 Jan, 15 Aug, 15–30 Sep, 29 Oct, and 04 Dec)**
 
-* **Cycle 1 (Starts 01 Jan 2027):** Block 1 for all 12 sailors (20 days for Ser 1–8; 15 days for Ser 9–12).  
-* **Cycle 2 (Starts 01 May 2027):** Block 2 for all 12 sailors (20 days for Ser 1–8; 15 days for Ser 9–12, completing 30 days total for Agniveers).  
-* **Cycle 3 (Starts 01 Sep 2027):** Block 3 for Permanent sailors Ser 1–8 (20 days each, completing 60 days total; Agniveers remain on active duty).
+The 12 sailors are scheduled in non-conflicting parallel rotations concluding entirely by **18 November 2027**:
+
+* **Cycle 1 (Starts 01 Jan 2027):** Block 1 for all 12 sailors (avoids 26 Jan Republic Day).  
+* **Cycle 2 (Starts 01 May 2027):** Block 2 for all 12 sailors (finishes July 19, well before 15 Aug Independence Day; Agniveers complete their 30-day entitlement).  
+* **Cycle 3 (Starts 21 Jul 2027):** Block 3 for Permanent sailors Ser 1–8 (20 days each; respects Annual Inspection 15–30 Sep, Diwali 29 Oct, and Navy Day 04 Dec; Agniveers remain on active watch).
 
 | Ser | Name | Rank / Rate | Block 1 Window | Block 2 Window | Block 3 Window | Total Days | Rotation Pairing |
 | :--- | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 01 Sep 2027 – 20 Sep 2027 | 60 | Pair 1 (with Mahesh) |
-| 2 | Vishal Sharma | POCOM(Tel) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 31 Oct 2027 – 19 Nov 2027 | 60 | Pair 4 (with MK Gurjar) |
-| 3 | RK Gupta | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 21 Sep 2027 – 10 Oct 2027 | 60 | Pair 2 (with Rajkishore) |
-| 4 | Rajkishore | POCOM(Tel) | 21 Jan 2027 – 09 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 21 Sep 2027 – 10 Oct 2027 | 60 | Pair 2 (with RK Gupta) |
-| 5 | Mayur Badade | LCOM(Tac) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 11 Oct 2027 – 30 Oct 2027 | 60 | Pair 3 (with Vijendra) |
-| 6 | Mahesh | LCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 01 Sep 2027 – 20 Sep 2027 | 60 | Pair 1 (with Pankaj Kumar Yadav) |
-| 7 | Vijendra | LCOM(Tac) | 10 Feb 2027 – 01 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 11 Oct 2027 – 30 Oct 2027 | 60 | Pair 3 (with Mayur Badade) |
-| 8 | MK Gurjar | LCOM(Tel) | 02 Mar 2027 – 21 Mar 2027 | 30 Jun 2027 – 19 Jul 2027 | 31 Oct 2027 – 19 Nov 2027 | 60 | Pair 4 (with Vishal Sharma) |
-| 9 | Rahul Chaira | AVR COM (Ops) | 01 Jan 2027 – 15 Jan 2027 | 01 May 2027 – 15 May 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream A |
-| 10 | Shiva Singh Rajawat | AVR COM (Ops) | 16 Jan 2027 – 30 Jan 2027 | 16 May 2027 – 30 May 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream B |
-| 11 | Shivam Kumar | AVR COM (Ops) | 31 Jan 2027 – 14 Feb 2027 | 31 May 2027 – 14 Jun 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream C |
-| 12 | Palendra Singh | AVR COM (Ops) | 15 Feb 2027 – 01 Mar 2027 | 15 Jun 2027 – 29 Jun 2027 | -- (Cycle 3 Completed) | 30 | Agniveer Stream D |
+| 1 | Pankaj Kumar Yadav | MCPOCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 21 Jul 2027 – 09 Aug 2027 | 60 | Pair 1 (with Mahesh) |
+| 2 | Vishal Sharma | POCOM(Tel) | 13 Mar 2027 – 01 Apr 2027 | 30 Jun 2027 – 19 Jul 2027 | 30 Oct 2027 – 18 Nov 2027 | 60 | Pair 4 (with MK Gurjar) |
+| 3 | RK Gupta | POCOM(Tel) | 27 Jan 2027 – 15 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 16 Aug 2027 – 04 Sep 2027 | 60 | Pair 2 (with Rajkishore) |
+| 4 | Rajkishore | POCOM(Tel) | 27 Jan 2027 – 15 Feb 2027 | 21 May 2027 – 09 Jun 2027 | 16 Aug 2027 – 04 Sep 2027 | 60 | Pair 2 (with RK Gupta) |
+| 5 | Mayur Badade | LCOM(Tac) | 16 Feb 2027 – 07 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 01 Oct 2027 – 20 Oct 2027 | 60 | Pair 3 (with Vijendra) |
+| 6 | Mahesh | LCOM(Tel) | 01 Jan 2027 – 20 Jan 2027 | 01 May 2027 – 20 May 2027 | 21 Jul 2027 – 09 Aug 2027 | 60 | Pair 1 (with Pankaj Kumar) |
+| 7 | Vijendra | LCOM(Tac) | 16 Feb 2027 – 07 Mar 2027 | 10 Jun 2027 – 29 Jun 2027 | 01 Oct 2027 – 20 Oct 2027 | 60 | Pair 3 (with Mayur Badade) |
+| 8 | MK Gurjar | LCOM(Tel) | 13 Mar 2027 – 01 Apr 2027 | 30 Jun 2027 – 19 Jul 2027 | 30 Oct 2027 – 18 Nov 2027 | 60 | Pair 4 (with Vishal Sharma) |
+| 9 | Rahul Chaira | AVR COM (Ops) | 01 Jan 2027 – 15 Jan 2027 | 01 May 2027 – 15 May 2027 | -- (Cycle Completed) | 30 | AVR Stream 1 |
+| 10 | Shiva Singh Rajawat | AVR COM (Ops) | 27 Jan 2027 – 10 Feb 2027 | 16 May 2027 – 30 May 2027 | -- (Cycle Completed) | 30 | AVR Stream 2 |
+| 11 | Shivam Kumar | AVR COM (Ops) | 11 Feb 2027 – 25 Feb 2027 | 31 May 2027 – 14 Jun 2027 | -- (Cycle Completed) | 30 | AVR Stream 3 |
+| 12 | Palendra Singh | AVR COM (Ops) | 26 Feb 2027 – 12 Mar 2027 | 15 Jun 2027 – 29 Jun 2027 | -- (Cycle Completed) | 30 | AVR Stream 4 |
+
+### **4.1 Station Blackout Verification Ledger**
+
+| Observance / Event | Restricted Calendar Window | Status | Station On-Duty Strength |
+| :--- | :--- | :---: | :---: |
+| **Republic Day** | 26 January 2027 | **0 on Leave** | **12 / 12 Sailors Present (100%)** |
+| **Independence Day** | 15 August 2027 | **0 on Leave** | **12 / 12 Sailors Present (100%)** |
+| **Annual Fleet Inspection** | 15 September 2027 – 30 September 2027 | **0 on Leave** | **12 / 12 Sailors Present (100%)** |
+| **Diwali** | 29 October 2027 | **0 on Leave** | **12 / 12 Sailors Present (100%)** |
+| **Navy Day** | 04 December 2027 | **0 on Leave** | **12 / 12 Sailors Present (100%)** |
 
 # **5\. Technical System Architecture & Database Schema**
 
@@ -210,20 +231,32 @@ CREATE TABLE leave_records (
 
 1. **Entitlement & Block Bounds Check:**  
    Confirm total accumulated leave days do not exceed `entitled_days`. Verify that individual block sizes strictly adhere to the sailor's profile (20 days for Ser 1–8, 15 days for Ser 9–12).  
-2. **Duty Direct Conflict Evaluation:**  
+2. **Station Blackout Dates Enforcement:**  
+   Verify that the proposed `[start_date, end_date]` does NOT intersect any mandatory station blackout dates (Republic Day 26 Jan, Independence Day 15 Aug, Annual Inspection 15–30 Sep, Diwali 29 Oct, Navy Day 04 Dec).  
+3. **Duty Direct Conflict Evaluation:**  
    Identify all duties where the applicant is assigned as `Primary`, `TDLR 1`, or `TDLR 2`.  
-3. **Tri-Tier Concurrency Conflict:**  
+4. **Tri-Tier Concurrency Conflict:**  
    For each duty associated with the applicant, query `leave_records` to verify that no pairing among {Primary, TDLR 1, TDLR 2} overlaps over the proposed `[start_date, end_date]`.  
-4. **Active Center Redundancy Verification:**  
+5. **Active Center Redundancy Verification:**  
    Ensure that at least two relief tiers remain on active duty at COMNETCEN across the candidate date window.  
-5. **State Transition Assertion:**  
-   Allow advancement to `OFFICER_APPROVED` status only if the non-overlap condition is proven across all 33 duty definitions.
+6. **State Transition Assertion:**  
+   Allow advancement to `OFFICER_APPROVED` status only if the non-overlap and blackout conditions are proven across all 32 duty definitions.
 
 ## **6.2 Python Conflict Engine Implementation**
 
 ```py
-from datetime import date
-from typing import List, Dict, Any, Tuple
+from datetime import date, timedelta
+from typing import List, Dict, Any, Tuple, Set
+
+BLACKOUT_DATES: Set[date] = {
+    date(2027, 1, 26),   # Republic Day
+    date(2027, 8, 15),   # Independence Day
+    date(2027, 10, 29),  # Diwali
+    date(2027, 12, 4),   # Navy Day
+}
+# Annual Fleet Inspection: 15 Sep - 30 Sep inclusive
+for d in range(15, 31):
+    BLACKOUT_DATES.add(date(2027, 9, d))
 
 class LeaveConflictEngine:
     def __init__(self, sailors: Dict[int, Dict[str, Any]], duties: List[Dict[str, Any]], leaves: List[Dict[str, Any]]):
@@ -239,14 +272,27 @@ class LeaveConflictEngine:
         if not applicant:
             return False, ["Applicant ID does not exist in Nominal Roll."]
 
-        # Check block duration constraint
+        # 1. Check Station Blackout Dates
+        cur = new_start
+        while cur <= new_end:
+            if cur in BLACKOUT_DATES:
+                errors.append(f"Station Blackout Violation: Leave cannot be granted on {cur} (Zero Leave Policy).")
+                break
+            cur += timedelta(days=1)
+
+        # 2. Check block duration constraint
         allowed_block = 20 if applicant["entitled_days"] == 60 else 15
         if duration != allowed_block:
             errors.append(f"Invalid duration: {duration} days. Required: {allowed_block} days.")
 
-        # Aggregate taken leave
+        # 3. Aggregate taken leave
         taken_days = sum(
             (l["end_date"] - l["start_date"]).days + 1
+            for l in self.leaves
+            if l["sailor_id"] == applicant_id and l["status"] in ["SUBMITTED", "TDLR_VERIFIED", "OFFICER_APPROVED"]
+        )
+        if taken_days + duration > applicant["entitled_days"]:
+            errors.append(f"Quota exceeded: Taking {duration} days will exceed entitlement of {applicant['entitled_days']} days.")
             for l in self.leaves
             if l["sailor_id"] == applicant_id and l["status"] in ["SUBMITTED", "TDLR_VERIFIED", "OFFICER_APPROVED"]
         )
